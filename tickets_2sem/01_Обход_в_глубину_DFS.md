@@ -47,7 +47,7 @@ class Graph {
         visited[v] = true;
         std::cout << v << " ";
 
-        // вызываем для смежных вершин
+        // вызываем для смежных вершин  
         for (int neighbor : adj[v]) {
             if (!visited[neighbor]) {
                 DFSUtil(neighbor, visited);
